@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Carrito - Little Bandals | Tu Compra de Art Toys</title>
+    
+    <meta name="description" content="Revisa tu carrito de compras en Little Bandals. Finaliza tu pedido de figuras de vinilo coleccionables y urban vinyl art toys para decoración alternativa.">
+    
+    <meta property="og:title" content="Carrito - Little Bandals">
+    <meta property="og:description" content="Descubre nuestra colección exclusiva de figuras de vinilo urbanas, art toys coleccionables inspirados en street art y cultura underground para decoración alternativa">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tu Carrito - Little Bandals">
+    <meta name="twitter:description" content="Colecciona el flow de la calle con nuestros bandals, figuras de vinilo con decoración de diseño urbano inspiradas en streetwear y arte callejero">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/carro.css">
+    <link rel="stylesheet" href="../css/carrito-vacio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../imagenes/Logo.png" alt="Little Bandals Logo"></a>
+        </div>
+        <nav>
+            <a href="shop.html">Tienda</a>
+            <a href="about.html">Nosotros</a>
+            <a href="register.html">Registro</a>
+            <a href="mapaweb.html">Mapa web</a>
+            <a href="carro.html" class="cart-btn">
+                <img src="../imagenes/CarritoLogo.png" alt="Carrito">
+            </a>
+        </nav>
+    </header>
+
+    <main class="carro-main">
+        <section class="carro-hero">
+            <h1>CARRITO DE COMPRA</h1>
+            <p>Revisa tu selección y finaliza tu pedido.</p>
+        </section>
+
+        <section class="carro-content">
+            <div id="loadingCarrito" class="loading-container">
+                <p class="loading-text">Cargando carrito...</p>
+            </div>
+
+            <div class="carro-container" id="carroContainer" style="display: none;">
+                
+                <div class="productos-lista" id="productosLista">
+                    <!-- Los productos se cargarán dinámicamente -->
+                </div>
+
+                <div class="resumen-pedido">
+                    <div class="resumen-content">
+                        <h2>RESUMEN</h2>
+                        
+                        <div class="resumen-linea">
+                            <span>Subtotal:</span>
+                            <span class="resumen-valor" id="subtotal">&euro;0.00</span>
+                        </div>
+                        
+                        <div class="resumen-linea">
+                            <span>Envío estimado:</span>
+                            <span class="resumen-valor" id="envio">&euro;5.00</span>
+                        </div>
+                        
+                        <div class="resumen-linea total-linea">
+                            <span>TOTAL:</span>
+                            <span class="resumen-total" id="total">&euro;0.00</span>
+                        </div>
+
+                        <button class="finalizar-btn" id="finalizarBtn">
+                            FINALIZAR COMPRA
+                        </button>
+
+                        <a href="shop.html" class="seguir-comprando">&larr; Seguir comprando</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Little Bandals – All rights reserved.</p>
+    </footer>
+
+    <script src="../js/carro.js"></script>
+</body>
+</html>

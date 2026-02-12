@@ -1,0 +1,62 @@
+/* Estilos para carrito vacío y loading */
+
+.carrito-vacio-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.carrito-vacio-titulo {
+    font-size: 32px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.carrito-vacio-texto {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.carrito-vacio-btn {
+    background: var(--lime-fosfo);
+    color: black;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.carrito-vacio-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(191, 255, 0, 0.4);
+}
+
+.loading-container {
+    text-align: center;
+    padding: 60px;
+}
+
+.loading-text {
+    font-size: 20px;
+    color: #666;
+}
+
+.error-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-text {
+    color: #f44336;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.error-link {
+    color: #bfff00;
+    text-decoration: underline;
+    font-weight: bold;
+}

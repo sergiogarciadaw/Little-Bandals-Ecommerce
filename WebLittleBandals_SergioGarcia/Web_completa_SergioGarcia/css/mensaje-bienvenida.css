@@ -1,0 +1,63 @@
+/* Estilos para el mensaje de bienvenida */
+
+.mensaje-bienvenida {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #bfff00;
+    color: black;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 18px;
+    animation: slideIn 0.5s ease-out;
+    max-width: 350px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mensaje-bienvenida.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.mensaje-bienvenida .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.mensaje-bienvenida .mensaje-titulo {
+    margin-bottom: 8px;
+}
+
+.mensaje-bienvenida .mensaje-subtitulo {
+    font-size: 14px;
+    font-weight: normal;
+}

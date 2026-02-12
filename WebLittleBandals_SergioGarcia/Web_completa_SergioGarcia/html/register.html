@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Registro - Little Bandals | Únete a la Comunidad</title>
+    
+    <meta name="description" content="Regístrate en Little Bandals y accede a nuestra tienda de urban vinyl art toys. Compra figuras de vinilo coleccionables para decoración de diseño.">
+    
+    <meta property="og:title" content="Registro - Little Bandals">
+    <meta property="og:description" content="Descubre nuestra colección exclusiva de figuras de vinilo urbanas, art toys coleccionables inspirados en street art y cultura underground para decoración alternativa">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Únete a Little Bandals">
+    <meta name="twitter:description" content="Colecciona el flow de la calle con nuestros bandals, figuras de vinilo con decoración de diseño urbano inspiradas en streetwear y arte callejero">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../imagenes/Logo.png" alt="Little Bandals Logo"></a>
+        </div>
+        <nav>
+            <a href="shop.html">Tienda</a>
+            <a href="about.html">Nosotros</a>
+            <a href="register.html">Registro</a>
+            <a href="mapaweb.html">Mapa web</a>
+            <a href="carro.html" class="cart-btn">
+                <img src="../imagenes/CarritoLogo.png" alt="Carrito">
+            </a>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h1 class="main-title">ÚNETE A LA BANDA</h1>
+        <p class="main-subtitle">Regístrate y Sé Parte del Flow</p>
+        
+        <div class="form-container">
+            <form id="registroForm" action="../php/procesar_registro.php" method="POST">
+                
+                <div class="input-group">
+                    <div class="input-icon">
+                        <img src="../imagenes/IconoUsuario.png" alt="Usuario">
+                    </div>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre de Bandido" required>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">
+                        <img src="../imagenes/IconoEmail.png" alt="Email">
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="micorreo@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">
+                        <img src="../imagenes/IconoPassword.png" alt="Contraseña">
+                    </div>
+                    <input type="password" id="password" name="password" placeholder="Al menos 8 caracteres (A-z, 0-9)" required minlength="8">
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">
+                        <img src="../imagenes/IconoPassword.png" alt="Confirmar">
+                    </div>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirmar Contraseña" required>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-icon">
+                        <img src="../imagenes/IconoFecha.png" alt="Fecha">
+                    </div>
+                    <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    REGISTRARME AHORA
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Little Bandals – All rights reserved.</p>
+    </footer>
+
+    <script src="../js/register-validation.js"></script>
+</body>
+</html>

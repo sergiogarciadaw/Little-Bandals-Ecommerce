@@ -1,0 +1,242 @@
+/* Mapa Web Styles */
+
+:root {
+    --lime-fosfo: #bfff00;
+    --pink-vibrant: #fb3dee;
+}
+
+.mapaweb-main {
+    background: url('../imagenes/FondoMapaweb.jpg') center/cover no-repeat;
+    background-color: #d4d4d4;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.mapaweb-hero {
+    background: url('../imagenes/FondoPiedra.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mapaweb-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+
+.mapaweb-hero h1 {
+    position: relative;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: var(--lime-fosfo);
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.mapaweb-hero p {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Content Section */
+.mapaweb-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+/* Sitemap Tree */
+.sitemap-tree {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Tree Nodes */
+.tree-node {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Level 0 - Nodo Principal */
+.tree-node.level-0 {
+    border-left: none;
+    padding-left: 0;
+}
+
+.tree-node.level-0 > .node-content {
+    background: black;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Level 1 - Nodos secundarios */
+.tree-node.level-1 {
+    border-left: 3px solid var(--lime-fosfo);
+    padding-left: 30px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.tree-node.level-1::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 25px;
+    width: 20px;
+    height: 3px;
+    background: var(--lime-fosfo);
+}
+
+.tree-node.level-1 > .node-content {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.tree-node.level-1 > .node-content:hover {
+    border-color: var(--lime-fosfo);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(191, 255, 0, 0.2);
+}
+
+/* Node Content */
+.node-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.node-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.node-link:hover {
+    color: var(--lime-fosfo);
+}
+
+.main-node {
+    font-size: 24px;
+    color: var(--lime-fosfo);
+}
+
+.main-node:hover {
+    color: white;
+}
+
+.secondary-link {
+    color: black;
+}
+
+.secondary-link:hover {
+    color: var(--lime-fosfo);
+}
+
+/* Node Description */
+.node-description {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Tree Branch */
+.tree-branch {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    border: 2px dashed #ddd;
+}
+
+.branch-label {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--lime-fosfo);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mapaweb-hero h1 {
+        font-size: 42px;
+    }
+
+    .mapaweb-hero p {
+        font-size: 16px;
+    }
+
+    .mapaweb-content {
+        padding: 40px 20px;
+    }
+
+    .sitemap-tree {
+        padding: 25px 20px;
+    }
+
+    .tree-node.level-1 {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+
+    .node-link {
+        font-size: 16px;
+    }
+
+    .main-node {
+        font-size: 20px;
+    }
+
+    .tree-branch {
+        padding: 20px 15px;
+    }
+
+    .branch-label {
+        font-size: 16px;
+    }
+
+    .node-description {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapaweb-hero h1 {
+        font-size: 32px;
+    }
+}

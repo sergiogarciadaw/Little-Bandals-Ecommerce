@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tienda - Little Bandals | Compra Figuras de Vinilo Art Toys</title>
+    
+    <meta name="description" content="Compra figuras de vinilo coleccionables Little Bandals. Urban vinyl art toys con estilo urbano para decoración de diseño. Envío rápido y seguro.">
+    
+    <meta property="og:title" content="Tienda Little Bandals - Urban Vinyl Art Toys">
+    <meta property="og:description" content="Descubre nuestra colección exclusiva de figuras de vinilo urbanas, art toys coleccionables inspirados en street art y cultura underground para decoración alternativa">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tienda Little Bandals">
+    <meta name="twitter:description" content="Colecciona el flow de la calle con nuestros bandals, figuras de vinilo con decoración de diseño urbano inspiradas en streetwear y arte callejero">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="../imagenes/Logo.png" alt="Little Bandals Logo"></a>
+    </div>
+    <nav>
+      <a href="shop.html">Tienda</a>
+      <a href="about.html">Nosotros</a>
+      <a href="register.html">Registro</a>
+      <a href="mapaweb.html">Mapa web</a>
+      <a href="carro.html" class="cart-btn">
+        <img src="../imagenes/CarritoLogo.png" alt="Carrito">
+      </a>
+    </nav>
+  </header>
+
+  <main class="shop-main">
+    <section class="shop-hero">
+      <h1>Nuestros Bandals</h1>
+      <p>Descubre cuales son los bandals más cools del mercado.</p>
+    </section>
+
+    <div class="menu-filtros" id="menuFiltros">
+      <div class="filtros-container">
+        <div class="busqueda-container">
+          <input type="text" id="searchInput" placeholder="Buscar Bandals..." class="busqueda-input">
+        </div>
+        
+        <div class="botones-filtro">
+          <button class="boton-filtro active" data-filter="all">Todos</button>
+          <button class="boton-filtro" data-filter="low-high">Precio ↑</button>
+          <button class="boton-filtro" data-filter="high-low">Precio ↓</button>
+          <button class="boton-filtro" data-filter="name-az">A-Z</button>
+          <button class="boton-filtro" data-filter="name-za">Z-A</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="product-grid" id="productGrid">
+
+  <div class="product-card" data-price="15" data-product-id="1">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_1.png" alt="Bandal 1" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 1</h3>
+    <p class="price">&euro;15.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="1">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="22" data-product-id="2">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_2.png" alt="Bandal 2" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 2</h3>
+    <p class="price">&euro;22.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="2">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="35" data-product-id="3">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_3.png" alt="Bandal 3" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 3</h3>
+    <p class="price">&euro;35.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="3">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="28" data-product-id="4">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_4.png" alt="Bandal 4" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 4</h3>
+    <p class="price">&euro;28.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="4">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="40" data-product-id="5">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_5.png" alt="Bandal 5" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 5</h3>
+    <p class="price">&euro;40.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="5">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="18" data-product-id="6">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_6.png" alt="Bandal 6" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 6</h3>
+    <p class="price">&euro;18.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="6">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="55" data-product-id="7">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_7.png" alt="Bandal 7" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 7</h3>
+    <p class="price">&euro;55.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="7">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="60" data-product-id="8">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_8.png" alt="Bandal 8" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 8</h3>
+    <p class="price">&euro;60.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="8">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="12" data-product-id="9">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_9.png" alt="Bandal 9" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 9</h3>
+    <p class="price">&euro;12.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="9">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="30" data-product-id="10">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_10.png" alt="Bandal 10" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 10</h3>
+    <p class="price">&euro;30.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="10">Agregar al Carrito</button>
+  </div>
+
+  <div class="product-card" data-price="25" data-product-id="11">
+    <div class="product-image">
+      <img src="../imagenes/Bandal_11.png" alt="Bandal 11" class="img-front">
+      <img src="../imagenes/Packaging.png" alt="Packaging" class="img-back">
+    </div>
+    <h3>Bandal 11</h3>
+    <p class="price">&euro;25.00</p>
+    <button class="view-btn add-to-cart-btn" data-product-id="11">Agregar al Carrito</button>
+  </div>
+
+</section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Little Bandals – All rights reserved.</p>
+  </footer>
+
+  <script src="../js/shop.js"></script>
+  
+
+</body>
+</html>
