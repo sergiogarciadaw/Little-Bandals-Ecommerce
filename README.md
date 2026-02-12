@@ -2,10 +2,10 @@
 
 Proyecto **Full Stack** de un E-commerce de figuras coleccionables, combinando diseño 3D propio con desarrollo web avanzado.
 
-![Banner del Proyecto](Web_completa_SergioGarcia/imagenes/Carrusel1.jpg)
+![Banner del Proyecto](WebLittleBandals_SergioGarcia\Web_completa_SergioGarcia\imagenes\Carrusel1.jpg)
 
 ##  Documentación Completa
-[Ver Documentación Técnica (PDF)](Web_completa_funcionalidad_SergioGarcia.pdf)
+[Ver Documentación Técnica (PDF)](WebLittleBandals_SergioGarcia\Web_completa_funcionalidad_SergioGarcia.pdf)
 
 ##  Características Técnicas
 
